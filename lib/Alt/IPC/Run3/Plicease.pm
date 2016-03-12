@@ -19,14 +19,15 @@ Alt::IPC::Run3::Plicease - Alternate implementation of IPC::Run3 with bugfixes
 
 =head1 DESCRIPTION
 
-L<IPC::Run3> is effectively unmaintained.  The combination of 
+L<IPC::Run3> is effectively unmaintained.  This understandable, since 
+there are today better alternatives.  The combination of 
 L<Capture::Tiny> and the Perl built-in C<system> is probably better 
-solution for your needs.  However, I have old scripts and modules that 
-cannot be upgraded and I need a properly patched version of 
-L<IPC::Run3>, and created this "alternate implementation" to make it 
-easier to install an already patched version.  Releasing it to CPAN also 
-will allow cpantesters to give some idea as to how good/bad these fixes 
-actually are.
+solution for your needs if you are writing new code.  However, I have 
+old scripts and modules that cannot be upgraded and I need a properly 
+patched version of L<IPC::Run3>, and created this "alternate 
+implementation" to make it easier to install an already patched version.
+Releasing it to CPAN as an Alt distribution also will allow cpantesters 
+to give some feedback on the quality of these fixes.
 
 This version includes these fixes:
 
@@ -78,7 +79,7 @@ contributors to the module.
 
 The Alt code author is:
 
-Graham Ollis E<gt>plicease@cpan.orgE<lt>
+Graham Ollis E<lt>plicease@cpan.orgE<gt>
 
 =head1 COPYRIGHT AND LICENSE
 
