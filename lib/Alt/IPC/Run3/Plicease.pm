@@ -19,15 +19,13 @@ Alt::IPC::Run3::Plicease - Alternate implementation of IPC::Run3 with bugfixes
 
 =head1 DESCRIPTION
 
-L<IPC::Run3> is effectively unmaintained.  This understandable, since 
-there are today better alternatives.  The combination of 
-L<Capture::Tiny> and the Perl built-in C<system> is probably better 
-solution for your needs if you are writing new code.  However, I have 
-old scripts and modules that cannot be upgraded and I need a properly 
-patched version of L<IPC::Run3>, and created this "alternate 
-implementation" to make it easier to install an already patched version.
-Releasing it to CPAN as an Alt distribution also will allow cpantesters 
-to give some feedback on the quality of these fixes.
+L<IPC::Run3> is appears to be effectively unmaintained.  This is understandable
+as there are better tools available today.  The combination of L<Capture::Tiny>
+and the Perl built-in C<system> for example.  However, I have old scripts and
+modules that cannot be upgraded and need a properly patched version of L<IPC::Run3>
+on Windows, so I created this "alternate implementation" to make it easier to
+install an already fixed L<IPC::Run3>.  Releasing to CPAN as an Alt distribution
+will also allow cpantesters to give some feedback on the quality of these fixes.
 
 This version includes these fixes:
 
@@ -56,11 +54,9 @@ documentation.
 
 =back
 
-This distribution also serves as an example of an Alt disttribution that 
-is implemented as a (somewhat) simple L<Dist::Zilla> C<dist.ini> file on 
-top of the existing non-Alt distribution in such a way that it should be 
-easy to apply any or all of the changes in this version to the original 
-non-Alt implementation.
+This distribution has been forked from the original L<IPC::Run3> in such
+a way that it should be easy to apply these fixes to the original without
+the "alt specific" portions.
 
 =head1 SEE ALSO
 
